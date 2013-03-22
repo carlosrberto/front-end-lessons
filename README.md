@@ -19,6 +19,8 @@
 
 Muitas vezes as pessoas confundem o desenvolvimento de HTML com programação, HTML não é uma linguagem de programação, pois não possui as características de uma, como variáveis, estruturas de controle etc.
 
+HTML é uma linguagem de **marcação**, ou seja marcamos o conteúdo do documento com tags para dar significado, estruturar ou incorporar um conteúdo.
+
 ### <a name="topic_12"/></a> 1.2 - Estrutura básica de um documento HTML
 
 ```html
@@ -75,8 +77,6 @@ Define uma região para insersão de elementos especificos, como por exemplo a t
 #### 1.2.4 - Tag ```<body></body>``` 
 
 Define a região do documento onde serão inseridos todos os elementos que fazem parte do **corpo** do documento, como elementos de texto e elementos estruturais, elementos de scripts e estilo também podem ser inseridos nessa região, porem o uso do ultimo nessa região não é recomendado pela comunidade.
-
-HTML é uma linguagem de **marcação**, ou seja marcamos o conteúdo do documento com tags para dar significado, estruturar ou incorporar um conteúdo.
 
 ### <a name="topic_13"/></a> 1.3 - Elementos para marcação de texto
 
