@@ -1,0 +1,63 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Box Model</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	.box-1{
+		width: 398px;
+		min-height: 150px;
+		background: red;
+		border: 1px solid #000;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+
+	.box-1 p{
+		padding: 100px;
+	}
+
+	.box-2{
+		width: 400px;
+		height: 100px;
+		background: blue;		
+	}
+
+	.box-3{
+		width: 400px;
+		height: 100px;
+		background: #999;	
+	}
+
+	.box-4{
+		width: 400px;
+		/*height: 100px;*/
+		background: yellow;
+		padding-top: 20px;
+	}
+
+	.inner-box-1{
+		width: 400px;
+		height: 20px;
+		background: green;		
+	}
+	</style>
+</head>
+<body>
+	<div class="box-1">
+
+	</div>	
+	<div class="box-2"></div>	
+	<div class="box-3"></div>	
+	<div class="box-4">
+		<div class="inner-box-1">
+			oi
+		</div>
+	</div>	
+</body>
+</html>

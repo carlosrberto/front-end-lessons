@@ -1,0 +1,135 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Float</title>
+	<style type="text/css">
+
+		.clearfix:after {
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+		 
+		.clearfix {
+			display: inline-block;
+		}
+		 
+		html[xmlns] .clearfix {
+			display: block;
+		}
+		 
+		* html .clearfix {
+			height: 1%;
+		}
+
+		.text{
+			border: 1px solid #000;
+		}
+
+		.text img{
+			float: right;
+			border: 1px solid #000;
+			margin: 0 0 20px 20px;
+			padding: 10px;
+		}
+
+		.container{
+			background: #000;
+			color: #fff;
+		}
+
+		.coluna-1{
+			width: 20%;
+			height: 100px;
+			background: yellow;
+			float: left;
+		}
+
+		.coluna-2{
+			width: 20%;
+			height: 100px;
+			background: blue;
+			float: right;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		.text-block{
+			clear: both;
+		}
+
+		.texto-grande{
+			width: 200px;
+			border: 1px solid #000;
+			height: 100px;
+			/*overflow: scroll;*/
+			overflow-y: scroll;
+		}
+
+		.field{
+			background: red;
+			overflow: hidden;
+		}
+
+		.field label{
+			float: left;
+		}
+
+		.field select{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="text">
+		<img src="carro.jpg" alt="">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="container clearfix">
+		<div class="coluna-1"></div>
+		<div class="coluna-2"></div>
+	</div>
+
+	<form>
+		<div class="field">
+			<label>Campo</label>
+			<select>
+				<option>opcao1</option>
+				<option>opcao2</option>
+				<option>opcao1</option>
+				<option>opcao2</option>
+				<option>opcao1</option>
+				<option>opcao2</option>
+				<option>opcao1</option>
+				<option>opcao2</option>
+				<option>opcao1</option>
+				<option>opcao2</option>
+				<option>opcao1</option>
+				<option>opcao2</option>				
+			</select>
+		</div>
+	</form>
+
+	<div class="texto-grande">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</body>
+</html>
