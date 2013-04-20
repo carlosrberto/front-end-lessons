@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Centralizando vertical, horizontal</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		font-family: Arial, sans-serif;
+	}
+
+	ul, li{
+		list-style: none;
+	}
+
+	h1{
+		padding-bottom: 20px;
+	}
+
+	.wrapper-logos{
+		text-align: center;
+	}
+
+	.logos{
+		padding: 20px;
+		background: #999;
+		overflow: hidden;
+		display: inline-block;
+	}
+
+	.logos li{
+		width: 160px;
+		height: 160px;
+		line-height: 160px;
+		border: 1px solid #000;
+		float: left;
+		margin: 0 10px 0 0;
+		text-align: center;
+		background: #fff;
+	}
+
+	.logos li:first-child{
+		background: red;
+	}
+
+	.logos li:last-child{
+		margin-right: 0;
+	}
+
+	.logos li img{
+		display: inline;
+		vertical-align: middle;
+	}
+
+	.products{
+		width: 960px;
+		margin: 0 auto;
+		border: 1px solid #000;
+		overflow: hidden;
+	}
+
+	.products li{
+		vertical-align: top;
+		margin-left: -3px;
+		width: 238px;
+		display: inline-block;
+		margin-bottom: 20px;
+		border: 1px solid #000;
+	}
+	</style>
+</head>
+<body>
+	<h1>Logomarcas</h1>
+	<div class="wrapper-logos">
+		<ul class="logos">
+			<li><img src="marca1.gif"></li>
+			<li><img src="marca2.jpg"></li>
+			<li><img src="marca3.jpg"></li>
+			<li><span>texto</span></li>
+			<li><img src="marca2.jpg"></li>
+		</ul>
+	</div>
+
+	<h1>Produtos</h1>
+	<ul class="products">
+		<li>
+			<h2>Titulo produto 1</h2>
+			<p>Descrição produto 1</p>
+			<p>Descrição produto 1</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 2</h2>
+			<p>Descrição produto 2</p>
+			<p>Descrição produto 2</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 3</h2>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 4</h2>
+			<p>Descrição produto 4</p>
+			<p>Descrição produto 4</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 1</h2>
+			<p>Descrição produto 1</p>
+			<p>Descrição produto 1</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 2</h2>
+			<p>Descrição produto 2</p>
+			<p>Descrição produto 2</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 3</h2>
+			<p>Descrição produto 3</p>
+			<p>Descrição produto 3</p>
+		</li>
+
+		<li>
+			<h2>Titulo produto 4</h2>
+			<p>Descrição produto 4</p>
+			<p>Descrição produto 4</p>
+		</li>								
+	</ul>
+</body>
+</html>

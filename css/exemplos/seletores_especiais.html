@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Seletores Especiais</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		font-family: Arial, sans-serif;
+	}
+	
+	.red-border, .red-border-2{
+		border: 1px solid red;
+	}
+
+	.red-border-2{
+		border-width: 2px;
+	}
+
+	input[type="text"] {
+		border: 1px solid blue;
+	}
+
+	a{
+		color: #999;
+	}
+
+	a[title]{
+		color: green;
+	}
+
+	a[title]:after{
+		content: attr(href);
+	}
+
+	.buttons{
+		padding: 20px;
+	}
+
+	.button{
+		background: #000;
+		color: #fff;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	.button:hover{
+		background: #ccc;
+		color: #000;
+	}
+
+	.button:active{
+		background: #999;
+	}
+
+	.form input{
+		outline: none;
+		padding: 10px;
+		border: 1px solid #000;
+	}
+
+	.form input:hover{
+		border-color: #ccc;
+	}
+
+	.form input:focus{
+		background: #999;
+	}
+	</style>
+</head>
+<body>
+	<ul class="red-border">
+		<li id="ex_1">exemplo 1</li>
+		<li class="line">exemplo 2</li>
+		<li data-item="3">exemplo 3</li>
+		<li title="exemplo 4">exemplo 4</li>
+	</ul>
+
+
+	<a href="#">link 1</a>
+	<a href="http://www.google.com/" title="link 2">link 2</a>
+
+	<p class="buttons">
+		<a href="#" class="button">Botão 1</a>
+	</p>
+
+	<form class="form">
+		<input type="text">
+	</form>
+</body>
+</html>

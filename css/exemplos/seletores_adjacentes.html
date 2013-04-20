@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Seletores Especiais</title>
+	<style type="text/css">
+		ul li{
+			color: #ccc;
+		}
+
+		ul + p{
+			color: red;
+		}
+
+		ul ~ p {
+			font-size: 20px;
+		}
+		
+
+		ul.nav > li{
+			border-bottom:  1px solid red;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<ul class="nav">
+			<li>
+				<a href="#">item 1</a>
+				<ul>
+					<li>sub item 1</li>
+					<li>sub item 2</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">item 2</a>
+				<ul>
+					<li>sub item 1</li>
+					<li>sub item 2</li>
+				</ul>			
+			</li>
+			<li><a href="#">item 3</a></li>
+		</ul>		
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+</body>
+</html>
