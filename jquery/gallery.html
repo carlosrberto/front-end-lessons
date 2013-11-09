@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Ajax</title>
+	<script src="jquery.js"></script>
+	<script src="gallery.js"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		body{
+			padding: 20px;
+		}
+
+		ul{
+			overflow: hidden;
+		}
+
+		li{
+			display: inline-block;
+		}
+
+		img{
+			border: 2px solid #ddd;
+		}
+
+		.large-image{
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Fotos</h1>
+
+	<div class="large-image">
+		<img src="images/image_1.jpg" alt="">
+	</div>
+
+	<ul class="image-list">
+		<li><a href="images/image_1.jpg"><img src="images/thumb_1.jpg" alt=""></a></li>
+		<li><a href="images/image_2.jpg"><img src="images/thumb_2.jpg" alt=""></a></li>
+		<li><a href="images/image_3.jpg"><img src="images/thumb_3.jpg" alt=""></a></li>
+	</ul>
+</body>
+</html>
